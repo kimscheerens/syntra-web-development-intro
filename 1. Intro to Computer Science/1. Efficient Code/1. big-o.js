@@ -2,7 +2,35 @@
  * Write a function that prints every even number of a list of numbers
  * O(N)
  */
+<<<<<<< Updated upstream
 function print_even_numbers() {}
+=======
+
+function print_even_numbers() {
+  
+  const array = [1,2,3,4,5];
+  let even = array.filter((number) => number % 2 === 0);
+  console.log(even);
+
+}
+
+console.log(print_even_numbers)
+
+ofwel:
+
+function print_even_numbers(){
+  const arr = [3,7, 8, 12, 2, 5, 22];
+
+  for (let item of arr){
+    if (item % 2){
+      console.log(item);
+    }
+  }
+}
+
+console.log(print_even_numbers)
+
+>>>>>>> Stashed changes
 
 /**
  * Look at the functions below, what is the time complexity?
