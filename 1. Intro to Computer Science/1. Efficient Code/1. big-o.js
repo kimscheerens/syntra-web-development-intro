@@ -38,19 +38,55 @@ console.log(print_even_numbers)
 
 // 1. Even or odd
 
-function isEven(value) {}
+function isEven(value) {
+  const overschot = value % 2;
+  if(overschot === 0){
+    return "Even"
+  } else {
+    return "oneven"
+  }
+}
+const test = isEven(8)
+console.log(test);
+
 
 // 2. Are You Here?
 
-function areYouHere(arr1, arr2) {}
+function areYouHere(arr1, arr2) {
+  for (let i = 0; i < arr1.length; i++) {
+      const itemA = arr1[i];
+      for (let j = 0; j < arr2.length; j++) {
+          const itemB = arr2[j];
+          if (itemA === itemB) return true;
+      }
+  }
+  return false;
+}
+
+
+  arr1.forEach(item => {
+    console.log(item);
+  });
+
+  arr2.forEach(item => {
+    console.log(item);
+  });
+
 
 // 3. Doubler
 
-function doubleArrayValues(array) {}
+function doubleArrayValues(array) {
+  for (let i = 0; i< array.length; i++) {
+     arr[i] = [];
+    }
+
+}
 
 // 4. Naive Search
 
-function naiveSearch(array, item) {}
+function naiveSearch(array, item) {
+
+}
 
 // 5. Creating Pairs
 
@@ -66,11 +102,15 @@ function efficientSearch(array, item) {}
 
 // 8. Random element
 
-function findRandomElement(arr) {}
+function findRandomElement(arr) {
+  const random_Number_In_Range = (min, max) => Math.random() * (max - min) + min;
+}
 
 // 9. Is It Prime?
 
-function isPrime(n) {}
+function isPrime(n) {
+
+}
 
 // 10. Factorial of a number w/ recursion
 
